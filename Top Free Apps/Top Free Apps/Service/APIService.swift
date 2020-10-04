@@ -14,7 +14,7 @@ protocol APIServiceProtocol {
 }
 
 class APIService: APIServiceProtocol {
-    
+            
     func fetchTopFreeApps(complete: @escaping (Bool, [Application]?, APIError?) -> ()) {
         
         Alamofire.request( Constant.TOP_FREE_APPS_URL, parameters: [:]).responseData { response in
