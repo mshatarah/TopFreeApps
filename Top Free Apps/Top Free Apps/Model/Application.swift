@@ -17,7 +17,7 @@ struct Applications: Codable {
 struct Entry: Codable {
      let entry: [Application]
 }
-
+         
 struct Application: Codable {
 
     let name: Label
